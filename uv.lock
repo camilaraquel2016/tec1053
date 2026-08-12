@@ -89,9 +89,9 @@ wheels = [
 ]
 
 [[package]]
-name = "validador-senha"
+name = "tec1053"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 
 [package.dev-dependencies]
 dev = [
