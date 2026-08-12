@@ -3,10 +3,10 @@
 Há mais de um caminho para usar IA nesta disciplina. Todos servem, e nenhum dá vantagem
 na nota. Escolha pelo que a sua situação permite.
 
-> **Situação deste documento:** a trilha local está testada e descrita abaixo. As
-> trilhas em nuvem e em navegador serão detalhadas antes da primeira atividade que as
-> exija. Cotas de serviços gratuitos mudam com frequência — este documento só afirma o
-> que foi conferido, e a data da conferência está sempre indicada.
+> **Situação deste documento:** as trilhas local e em nuvem estão testadas e descritas
+> abaixo. A trilha em navegador será detalhada antes da primeira atividade que a exija.
+> Cotas de serviços gratuitos mudam com frequência — este documento só afirma o que foi
+> conferido, e a data da conferência está sempre indicada.
 
 ## Antes de escolher: gerar e agir são coisas diferentes
 
