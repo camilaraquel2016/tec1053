@@ -100,14 +100,57 @@ Entre os modelos testados, só o `llama3.2:3b` produziu chamadas de ferramenta b
 formadas — e ainda assim se perdeu no laço de várias etapas. O `qwen2.5-coder:3b` não
 produziu nenhuma. Fica registrado como experimento, não como caminho recomendado.
 
-## Trilha em nuvem — modelo em servidor externo
+## Trilha em nuvem — GitHub Copilot CLI
 
 Modelos maiores, respostas mais rápidas, sem consumir a sua máquina. É a trilha
-necessária para usar agentes. Em troca, os seus dados saem do equipamento e você depende
-de conexão e de cota.
+necessária para usar **agente**. Em troca, os seus dados saem do equipamento e você
+depende de conexão e de cota.
 
-Há opções gratuitas. O passo a passo da que a disciplina vai adotar entra aqui antes da
-primeira atividade que dependa de nuvem.
+A rota adotada pela disciplina é o **GitHub Copilot CLI no plano Free**. Motivo: você já
+precisa de conta no GitHub para os laboratórios, o plano gratuito não pede cartão, e o
+agente funciona de verdade no terminal.
+
+### Instalação
+
+Requer Node.js instalado.
+
+```bash
+npm install -g @github/copilot
+copilot
+```
+
+Na primeira execução ele pede autenticação com a sua conta do GitHub.
+
+### Conferido em 12/08/2026
+
+Numa conta pessoal comum, plano **GitHub Free + Copilot Free**, sem GitHub Education e
+sem cartão cadastrado:
+
+- O agente listou o diretório, leu um arquivo e identificou o bug corretamente.
+- Levou 11 segundos e consumiu 1,85 crédito de IA.
+- Em **Configurações → Billing → AI usage**, a opção "Additional usage" vem
+  **desabilitada** por padrão: quando os créditos incluídos acabam, o agente para de
+  funcionar até o mês seguinte. **Não gera cobrança.**
+
+### Sobre a cota
+
+O plano Free tem um limite mensal de sugestões e de créditos de IA. Acompanhe em
+**Configurações → Copilot**, no topo da página.
+
+Créditos são gastos rápido em tarefas de agente. Use a trilha local para gerar código,
+que é barato e ilimitado, e guarde o agente para o que só ele faz: navegar pelo
+repositório, editar vários arquivos e rodar os testes sozinho.
+
+Confirme que "Additional usage" está desabilitada na sua conta antes de começar. Assim
+não há como gerar fatura por engano.
+
+### Uma configuração que vale olhar
+
+Em **Configurações → Copilot → Privacidade** existe a opção *"Allow GitHub to use my data
+for AI model training"*, habilitada por padrão.
+
+Decida conscientemente se quer deixá-la ligada. Não muda a sua nota, e é exatamente o
+tipo de escolha que a Unidade 1 discute: o que viaja quando a inferência não é local.
 
 **Se você já paga por alguma ferramenta**, pode usá-la. Não gera vantagem avaliativa —
 está no plano de ensino.
@@ -121,12 +164,12 @@ A rota escolhida entra aqui depois de testada de ponta a ponta com este reposit�
 
 ## Qual escolher
 
-| Sua situação | Trilha |
+| O que você quer fazer | Trilha |
 |---|---|
-| Máquina própria com 8 GB ou mais | Local |
-| Máquina própria fraca, com internet boa | Nuvem |
-| Só o computador do laboratório, sem permissão de instalar | Navegador |
-| Sem máquina própria e sem internet em casa | Navegador, no laboratório |
+| Gerar código e verificar com testes | Local, se a máquina tiver 8 GB ou mais |
+| Gerar código sem consumir a máquina | Nuvem |
+| Usar **agente** que edita arquivos e roda testes | Nuvem — a local não dá conta |
+| Trabalhar sem instalar nada | Navegador |
 
 Pode usar mais de uma. Aliás, **deve**: comparar o mesmo problema em trilhas diferentes
 é exatamente o experimento comparativo da Unidade 5.
