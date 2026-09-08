@@ -51,6 +51,10 @@ exercício. Cada teste que falha aponta um critério de aceitação a cumprir.
 O índice fica em [`labs/README.md`](labs/README.md). Comece pelo
 [Lab 01 — Validador de senha](labs/lab-01-validador-senha/).
 
+Já disponível: **[Lab 02 — Fila Fácil](labs/lab-02-fila-facil/)**, aplicação de fila
+com HTML, CSS e JavaScript. [Tutorial prático](labs/lab-02-fila-facil/TUTORIAL.md).
+Seus 24 testes rodam no navegador; `uv run pytest` continua coletando apenas o Lab 01.
+
 Laboratórios novos aparecem ao longo do semestre. Para receber os que forem
 adicionados depois do seu fork:
 
@@ -59,7 +63,9 @@ git remote add upstream https://github.com/aislanifpi/tec1053.git
 git pull upstream main
 ```
 
-Como cada laboratório é uma pasta nova, isso não gera conflito com o seu trabalho.
+Antes de atualizar, confira `git status --short` e preserve seu trabalho. Atualizações
+podem conflitar em arquivos compartilhados. Se houver dúvida, use um clone novo,
+como explicado no tutorial do Lab 02.
 
 ## Estrutura
 

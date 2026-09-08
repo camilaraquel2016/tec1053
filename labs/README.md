@@ -7,9 +7,10 @@ mesma régua — o que varia é o modelo, a ferramenta e o caminho.
 | Lab | Tema | Unidade | Situação |
 |---|---|---|---|
 | [01](lab-01-validador-senha/) | Validador de senha | 3 e 4 | Disponível |
+| [02](lab-02-fila-facil/) | Fila Fácil — aplicação e supervisão de agente | 2, com apoio de 3 e 4 | Disponível |
 
-Os demais serão publicados ao longo do semestre. Depois de dar fork, use
-`git pull upstream main` para recebê-los.
+Os demais serão publicados ao longo do semestre. Antes de atualizar um fork, confira
+`git status --short` e preserve alterações locais. O tutorial do Lab 02 explica a atualização segura.
 
 ## Anatomia de um laboratório
 
@@ -38,3 +39,9 @@ uv run pytest labs/lab-01-validador-senha
    numa implementação de referência mantida fora do repositório público.
 5. Escrever o `AGENTS.md` do laboratório.
 6. Acrescentar a linha na tabela acima.
+
+## Laboratórios de navegador
+
+O Lab 02 usa JavaScript nativo e suíte executável no navegador, sem dependências npm.
+Não precisa entrar no pythonpath. Seu tutorial documenta os comandos próprios e a
+validação vermelha/verde, mantendo a referência fora do repositório público.
