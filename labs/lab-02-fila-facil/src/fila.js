@@ -11,18 +11,27 @@
   }
 
   function emitirSenha(estado) {
-    // TODO: RF-02. Atualize o estado recebido e retorne o número emitido.
-    throw new Error("LAB02_PENDENTE: emitirSenha");
+    estado.aguardando.push(estado.proximaSenha);
+    const emitida = estado.proximaSenha;
+    estado.proximaSenha += 1;
+    return emitida;
   }
 
   function chamarProxima(estado) {
-    // TODO: RF-03 e RF-04. A fila vazia não deve apagar a senha atual.
-    throw new Error("LAB02_PENDENTE: chamarProxima");
+    if (estado.aguardando.length === 0) {
+      return null;
+    }
+    const chamada = estado.aguardando.shift();
+    estado.atual = chamada;
+    estado.totalChamadas += 1;
+    return chamada;
   }
 
   function reiniciarFila(estado) {
-    // TODO: RF-05. Restaure os campos do mesmo objeto.
-    throw new Error("LAB02_PENDENTE: reiniciarFila");
+    estado.proximaSenha = 1;
+    estado.aguardando = [];
+    estado.atual = null;
+    estado.totalChamadas = 0;
   }
 
   globalThis.FilaFacil = Object.freeze({
